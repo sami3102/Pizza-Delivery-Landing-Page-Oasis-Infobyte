@@ -270,8 +270,10 @@ a{
         background-color: rgb(129, 234, 129);
         border: none;
         border-radius: 0.5rem;
+        
         a{
             color: black;
+            font-size : 1rem;
         }
 
     }
