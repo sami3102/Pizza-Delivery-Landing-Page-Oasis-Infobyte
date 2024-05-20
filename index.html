@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chizza's</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./assets/images/pizza_img1.png">
+</head>
+<body>
+    <div class="nav-bar">
+            <li>
+                <a href="./index.html" class="nav-list">Home</a>
+            </li>
+            <li><a href="./pages/deliverystatus.html" class="nav-list">Delivery status</a>
+            <li>
+                <a href="#pizza_varity" class="nav-list">Pizza Varieties</a></li>
+            <li><a href="./pages/signin.html" class="nav-list">Sign in</a></li>
+            <li>
+                <a href="./pages/signup.html" class="nav-list">Sign up</a>
+            </li>
+            <li>
+                <a href="./pages/cart.html"><img src="./assets/images/cart_open_img.png" id="cart_empty_img"></a>
+                <div class="cart_value">
+                    <p id="cart_val">0</p>
+                </div>
+            </li>
+           
+    </div>
+
+    
+   <div class="welcome_txt">
+   <h1>Welcome to <br><span class="chizza">Chizza's</span></h1>
+   </div>
+
+   <div>
+    <img src="./assets/images/pizza_img1.png" class="pizza_img">
+   </div>
+
+
+   <div class="welcome_msg">
+   <p>We give you the best quality and hygiene pizza and it's our promise to you.</p>
+   </div>
+   <div class="get_started">
+    <button id="btn">
+        <a href="#pizza_varity">
+        Get Your Pizza now
+    </a>
+    </button>
+   </div>
+
+    </div>
+   </div>
+ <hr>
+   <div class="second_page" id="pizza_varity">
+
+    <h1 class="varities_heading headings">Pizza Varities</h1>
+     
+    <div class="pizza_varities">
+       
+    <div class="variety veg">
+        <h1 id="veg">Veg Pizza's</h1>
+        <div class="pizza_images">
+        <img src="./assets/images/vega_pizza.png">
+        </div>
+        <p>Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce on a Domino's cheesy base.</p>
+    
+        <button><a href="#vegpizza">View all</a></button>
+    </div>
+    
+    <div class="variety veg">
+        <h1 id="nonveg">Non-veg Pizza's</h1>
+        <div class="pizza_images">
+        <img src="./assets/images/nonveg_pizza.png">
+    </div>
+     
+        <p>Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce on a Domino's cheesy base.</p>
+       
+        <button><a href="#nonvegpizza">View all</a></button>
+    </div>
+    
+   </div>
+   </div>
+<hr>
+
+    <section class="stockpage_1" id="vegpizza">
+
+    <h1 class="headings veg_heading">Veg Pizza's</h1>
+    
+    <div class="veg_stock">
+    <div class="variety veg_variety">
+        <h1 id="veg">American Cheesy</h1>
+        <div class="pizza_images">
+        <img src="./assets/images/americancheesy.png">
+    </div>
+        <div class="price">&#8377 399 Rs/- </div>
+    
+        <p class="veg_p">Our divine peruvian flavoured cheesy sauce, topped with sweet corn, green capsicum, red paprika.</p>
+        <div class="break"></div>
+        <button id="add_to_box" onclick="addCart()">Add to box</button>
+    </div>
+    <div class="variety veg_variety">
+        <h1 id="veg">Tandoori Veggie</h1>
+        <div class="pizza_images">
+        <img src="./assets/images/tandooriveg.jpeg">
+        </div>
+        <div class="price">&#8377 399 Rs/- </div>
+    
+        <p class="veg_p">An ultimate combination of your favourite veggies- onion, green capsicum, mushroom, tomato, spicy jalapeno on tandoori sauce.</p>
+        <div class="break"></div>
+        <button id="add_to_box" onclick="addCart()">Add to box</button>
+    </div>
+
+    <div class="variety veg_variety">
+        <h1 id="veg">Cheezy Mushroom</h1>
+        <div class="pizza_images">
+        <img src="./assets/images/cheesymushroompizza.jpeg">
+        </div>
+        <div class="price">&#8377 399 Rs/- </div>
+    
+        <p class="veg_p">A new combination with creamy mushroom sauce, chunky black olives, spicy jalapeno, juicy sweet corn.</p>
+        <div class="break"></div>
+        <button id="add_to_box" onclick="addCart()">Add to box</button>
+    </div>
+
+
+
+  
+</section>
+   <hr>
+
+
+<section class="stockpage_2" id="nonvegpizza">
+
+    <h1 class="headings nonveg_heading">Non-Veg Pizza's</h1>
+    
+    <div class="nonveg_stock">
+    <div class="variety nonveg_variety">
+        <h1 id="nonveg">Nawabi Murg Makhni</h1>
+        <div class="pizza_images">
+        <img src="./assets/images/nawabimurg.jpeg">
+    </div>
+        <div class="price">&#8377 399 Rs/- </div>
+        <p class="nonveg_p">A chicken lovers delight ! Combination of chicken malai tikka, flavourful chicken keema masala, crunchy onion, juicy tomato</p>
+        <div class="break"></div>
+        <button id="add_to_box" onclick="addCart()">Add to box</button>
+    </div>
+
+    <div class="variety nonveg_variety">
+        <h1 id="nonveg">Dhabe Da Keema</h1>
+        <div class="pizza_images">
+        <img src="./assets/images/keemapizza.png">
+        </div>
+        <div class="price">&#8377 399 Rs/- </div>
+        <p class="nonveg_p">Dhaba style chicken keema masala, with green chiili, crunchy onion with flavourful pan sauce 100% mozzarella cheese & a generous drizzle</p>
+        <div class="break"></div>
+        <button id="add_to_box" onclick="addCart()">Add to box</button>
+    </div>
+
+    <div class="variety nonveg_variety">
+        <h1 id="nonveg">Sizzling Schezwan</h1>
+        <div class="pizza_images">
+        <img src="./assets/images/schezwanchicken.png">
+        </div>
+        <div class="price">&#8377 399 Rs/- </div>
+        <p class="nonveg_p">Loaded with our signature spicy schezwan sauce, juicy schezwan chicken meatballs & 100% mozzarella cheese.</p>
+        <div class="break"></div>
+        <button id="add_to_box" onclick="addCart()">Add to box</button>
+    </div>
+   
+</section>
+<hr>
+
+<section id="branches">
+    <div class="branches_heading">
+        <h1>Our Branches</h1>
+    </div>
+    <div class="branches_map">
+        <img src="./assets/images/branches_map.png">
+    </div>
+
+    <!--Bahadurpura-->
+    <div class="branches_mapping">
+        <div>
+            <a href="https://maps.app.goo.gl/4bsX814J3XR5WHtd7"><img src="./assets/images/mapping.png" id="branch" onmouseover="hoverImage(event)" onmouseout="hoverImage(event)">
+            </a>
+        <div>
+            <img src="./assets/images/bahadur_branch_2.jpg" id="onhover">
+        </div>
+        </div>
+        </div>
+
+
+         <!--Asif nagar-->
+        <div class="branches_mapping2">
+            <div>
+                <a href="https://maps.app.goo.gl/p5UFrL9yaGnsE9uHA"><img src="./assets/images/mapping.png" id="branch2" onmouseover="hoverImage2(event)" onmouseout="hoverImage2(event)">
+                </a>
+            <div>
+                <img src="./assets/images/asifnagar_branch_1.jpg" id="onhover2">
+            </div>
+            </div>
+            </div>
+          
+             <!--Amberpet-->
+            <div class="branches_mapping3">
+                <div>
+                    <a href="https://maps.app.goo.gl/TF43UM6FiBdKEpUi9"><img src="./assets/images/mapping.png" id="branch3" onmouseover="hoverImage3(event)" onmouseout="hoverImage3(event)">
+                    </a>
+                <div>
+                    <img src="./assets/images/amberpet_branch_3.jpg" id="onhover3">
+                </div>
+                </div>
+                </div>
+</section>
+<hr>
+
+  <section id="contact">
+    <div class="touch">
+        <div>
+        <h1>
+            Contact Us
+        </h1>
+        <div class="touch_contact">
+            <h1>
+                Email
+            </h1>
+            <h2><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDCwfRPVfWdXzjJgQlKlbRrMpvFqCWzhLzlrjGwzHdckmRKtKXTJxsBTCvRJGvdKdrwBCL">support@chizzas.com</a></h2>
+            <h1>
+                Call us
+            </h1>
+            <h2><a href="tel:040-12345678">040-12345678</a></h2>
+            <h1>
+                WhatsApp Us
+            </h1>
+            <h2>
+              <a href="https://wa.me/+911234567890" target="_blank">  +91 1234567890 </a>
+            </h2>
+        </div>
+    </div>
+  </section>
+
+  <section class="footer1">
+    <footer>
+        <a href="./index.html">Home</a>
+        <a href="./pages/deliverystatus.html">Delivery status</a>
+        <a href="./index.html">About us</a>
+        <a href="#contact">Contact us</a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDCwfRPVfWdXzjJgQlKlbRrMpvFqCWzhLzlrjGwzHdckmRKtKXTJxsBTCvRJGvdKdrwBCL">Email us</a>
+        <a href="tel:+919900990099">Call us</a>
+        <a href="#branches">Branches</a>
+    </footer>
+    <div class="copy">
+        <a href="https://www.linkedin.com/in/mohammed-sami-pasha-a1716a236/">&copy; Mohammed Sami Pasha</a>
+    </div>
+  </section>
+   <script src="index.js"></script>
+
+</body>
+</html>

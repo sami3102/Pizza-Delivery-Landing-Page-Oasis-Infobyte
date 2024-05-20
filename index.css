@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 1.2vw;
+}
+a{
+    text-decoration: none;
+}
+
+/* Nav-bar CSS */
+.nav-bar{
+    background-color: brown;
+    height: 3rem;
+    width: 100vw;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.nav-bar li{
+    list-style: none;
+    text-align: center;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: rgb(255, 232, 182);
+    font-size: 1rem;
+    display: block;
+    padding: 0.9rem;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-bar li:hover{
+    background-color: rgb(200, 52, 52);
+    align-items: center;
+    overflow: hidden;
+}
+/* Nav-bar CSS end */
+
+
+/*Welcome Page CSS */
+
+.pizza_img{
+    position: absolute;
+    width: 30rem;
+    margin-left: 60%;
+   top: 3rem;
+}
+.welcome_txt{
+    margin: 3em;
+    font-size: 2rem;
+}
+.chizza{
+    font-size: 2.4em;
+    color: rgba(255, 157, 0, 0.818);
+}
+.welcome_msg{
+    margin: 0em 0em 0em 3em;
+    text-align: center;
+    width: 80%;
+    font-size: 2.5rem;
+}
+.get_started{
+    margin: 2rem 1rem 1rem 38rem;
+}
+.get_started button{
+    width: 10rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 0, 0.586);
+    border: inherit;
+    border-radius: 3.4rem;
+    font-size: 0.7rem;
+    a{
+    color: black;
+    }
+
+}
+.get_started button:hover{
+    background-color: yellow;
+}
+
+/* Welcome page CSS end */
+
+/* Pizza Varities CSS */
+
+.second_page{
+    width: 100vw;
+    height: 50vw;
+}
+
+.headings{
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem;
+    color: brown;
+}
+
+
+.pizza_varities{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 70vw;
+    margin-left: 10rem;
+}
+.variety{
+    border: solid 0.1rem;
+    width: 26vw;
+    height: 32vw;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem;
+    align-items: center;
+    transition: 0.5s;
+   h1{
+    width: 100%;
+    font-size: 2rem;
+    border-bottom: solid;
+   }
+   .pizza_images{
+    margin-top: 2rem;
+    width: 100%;
+    height: 55%;
+   }
+   img{
+     width:20vw;
+     height: 12vw;
+   }
+   p{
+    color: rgba(0, 0, 0, 0.841);
+    width: 20rem;
+   }
+    button{
+       width: 4rem;
+       height: 1.5rem;
+       border: none;
+       border-radius: 1rem;
+       background-color: rgb(215, 179, 117);
+       font-size: 0.7rem;
+       transition: 0.5s;
+       a{
+        color: rgba(0, 0, 0, 0.727);
+       }
+   }
+   button:hover{
+    transition: 1s;
+    background-color:rgb(255, 187, 69);
+    a{
+    color: grey;
+   }
+}
+}
+
+/* Pizza Varities CSS end */
+
+
+/* Menu/Stock CSS */
+#veg{
+    color: green;
+}
+#nonveg{
+    color: rgb(212, 85, 85);
+}
+.variety:hover{
+    transition: 1s;
+    box-shadow: black 0.1rem 0.3rem 0.3rem 0.1rem;
+}
+
+.break{
+    width: 100%;
+    border-top: solid;
+}
+
+.veg_stock{
+    display: flex;
+   text-align: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 3rem;
+}
+.price{
+    color: rgb(161, 7, 7);
+    font-size: 1.5rem;
+}
+.veg_variety{
+    width: 21rem;
+    button{
+        background-color: green;
+        color: yellow;
+        margin-top: 0.5rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.6rem;
+
+    }
+    button:hover{
+        background-color: rgb(73, 173, 73);
+        color: white;
+    }
+}
+
+.nonveg_stock{
+    display: flex;
+   text-align: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 3rem;
+}
+
+
+.nonveg_variety{
+    width: 21rem;
+    button{
+        background-color: brown;
+        color: yellow;
+        margin-top: 0.5rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.6rem;
+    }
+    button:hover{
+        background-color: rgb(73, 173, 73);
+        color: white;
+    }
+}
+/* Menu/Stock CSS end */
+
+/* Cart CSS */
+
+/*cart CSS */
+.cart_h1{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.cart_page{
+    width: 100vw;
+    height: 70vw;
+}
+
+.cart_value{
+    position: absolute;
+    left: 76.2rem;
+    top: 1.2rem;
+    width: 1rem;
+    overflow: hidden;
+    p{
+        color: brown;
+        font-size: 0.7rem;
+        font-weight: 1000;
+    }
+}
+#cart_empty_img{
+    width: 3rem;
+    height: 2rem;
+}
+.order_first{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    button{
+        width: 5rem;
+        height: 2rem;
+        margin: 1rem 0rem 0rem 23rem;
+        background-color: rgb(129, 234, 129);
+        border: none;
+        border-radius: 0.5rem;
+        a{
+            color: black;
+        }
+
+    }
+    button:hover{
+        background-color: green;
+        a{
+        color: white;
+        }
+    }
+
+}
+
+.order_img{
+    width: 24rem;
+    height: 16rem;
+    margin-left: 14rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    img{
+        width: 20rem;
+        height: 15rem;
+    }
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem;
+}
+.order_details{
+    width: 50rem;
+    height: 50rem;
+    background-color: rgba(255, 255, 140, 0.177);
+    box-shadow: 0.2rem 0.3rem 0.5rem 0.4rem;
+
+}
+.order_total{
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Cart CSS end */
+
+/*Our Branches CSS */
+
+.branches_heading h1{
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    text-align: center;
+    color: rgb(82, 35, 35);
+}
+.branches_map{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.branches_map img{
+    margin-top: 4rem;
+    width: 50rem;
+    height: 25rem;
+}
+.branches_mapping img{
+    width: 1.8rem;
+    position: absolute;
+    top: 191rem;
+    left: 41.3rem;
+}
+.branches_mapping2 img{
+    width: 1.8rem;
+    position: absolute;
+    top: 182rem;
+    left: 32rem;
+}
+#onhover,#onhover2,#onhover3{
+    width: 13rem;
+    height: 7rem;
+    z-index: -1;
+    position: absolute;
+    margin-left: 2rem;
+}
+.branches_mapping3 img{
+    width: 1.8rem;
+    position: absolute;
+    top: 182rem;
+    left: 50rem;
+}
+
+/* Branches CSS end */
+
+
+/* Contact Us CSS */
+
+.touch {
+   margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h1{
+    font-size: 4rem;
+    color: yellowgreen;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.touch_contact{
+    margin-top: 4rem;
+    margin-bottom: 5.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h1{
+    font-size: 2rem;
+    color: chocolate;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* Contact Us CSS end */
+
+
+/*Signin & Signup form CSS */
+
+.signin_form{
+    box-shadow: 0.1rem 0.02rem 1rem 0.05rem;
+    margin: 8rem 30rem;
+display: block;
+text-align: center;
+width: 25rem;
+height: 20rem;
+overflow: hidden;
+background-color: rgba(218, 218, 74, 0.139);
+}
+
+.signin_form form{
+    display: flex;
+    flex-direction:column ;
+    gap: 1rem;
+    padding: 2.3rem;
+    align-items: center;
+    margin-top: 2rem;
+   
+    input{
+        width: 15rem;
+       height: 1.5rem;
+       border-radius: 0.3rem;
+       text-align: center;
+       border: solid rgba(255, 255, 0, 0.679);
+       font-size: 0.7rem;
+    
+    }
+    button{
+        width: 7rem;
+        border-radius: 0.3rem;
+        font-size: 0.7rem;
+        background-color: rgb(90, 88, 88);
+        color: white;
+        padding: 0.2rem;
+    }
+    button:hover{
+      background-color: black;
+    }
+
+}
+.not_registered{
+    position: absolute;
+    color: red;
+    margin-left: -8rem;
+    margin-top: 2rem;
+    button{
+        margin-left: 1rem;
+        color: green;
+        width: 9rem;
+        height: 1.5rem;
+        background-color: wheat;
+        border: none;
+        border-radius: 1rem;
+        font-size: 0.7rem;
+        a{
+            text-decoration: none;
+            color: green;
+        }
+    }
+    button:hover{
+        background-color: rgb(197, 155, 126);
+        color: greenyellow;
+    }
+}
+
+.signup_form{
+    height: 30rem;
+    width: 30rem;
+    margin: 3rem 30rem;
+}
+
+/*Signin & Signup form CSS end */
+
+
+/* Delivery Status CSS */
+
+.search_status_heading{
+    
+        width: 100vw;
+    
+}
+.order{
+    margin-top: 4rem;
+    text-align: center;
+    h1{
+        font-size: 3rem;
+        color: brown;
+    }
+    input{
+        width: 10rem;
+        height: 1.5rem;
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+    button{
+        width: 3rem;
+        font-size: 0.7rem;
+        border: none;
+        height: 1.5rem;
+        background-color: rgb(179, 238, 179);
+        border-radius: 0.2rem;
+    }
+    button:hover{
+        background-color: rgb(80, 175, 80);
+    }
+
+}
+
+
+#delivery{
+    display: none;
+}
+.status{
+    margin:4rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    justify-content: space-around;
+    div{
+        width: 4rem;
+        height: 4rem;
+        border-radius:4rem ;
+        border: solid 0.1rem;
+        background-color:rgba(20, 245, 20, 0.557);
+
+       
+    }
+    span{
+        display: flex;
+        width: 11.6rem;
+        height: 0.7rem;
+        margin-top: 1.6rem;
+        z-index: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: red;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 4.05rem;
+        
+    }
+   
+}
+.success{
+    div{
+        width: 4rem;
+        height: 2rem;
+        font-size: 0.7rem;
+        text-align: center;
+         overflow: hidden;
+    }
+    display: flex;
+    margin-left: 7.7rem;
+    position: absolute;
+    top: 19.5rem;
+    gap: 11.7rem;
+    display: none;
+
+}
+
+/* Delivery Status CSS end */
+
+
+/* Footer CSS */
+.footer{
+    background-color: rgba(155, 165, 42, 0.409);
+    padding: 0.5rem;
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    
+}
+footer{
+
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 2vw;
+    margin: 1rem;
+        a{
+        text-decoration: none; 
+        color: brown;
+    }
+
+}
+.copy{
+    text-align: center;
+    margin-top: 1rem;
+    a{
+        color: brown;
+    }
+}
+
+.footer1{
+    background-color: rgba(155, 165, 42, 0.409);
+    padding: 0.5rem;
+    
+}
+
+/* Footer CSS end */
+
